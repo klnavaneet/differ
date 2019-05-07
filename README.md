@@ -1,5 +1,5 @@
 # DIFFER
-Source codes for the paper [DIFFER: Moving Beyond 3D Reconstruction with Differentiable Feature Rendering].</br>
+Source codes for the paper "DIFFER: Moving Beyond 3D Reconstruction with Differentiable Feature Rendering".</br>
 Accepted at *3D-WiDGET, First Workshop on Deep GEneraTive models for 3D understanding at CVPR" (CVPRW-19)*
 
 ## Overview
