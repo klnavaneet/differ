@@ -44,6 +44,9 @@ cd rgb
 bash run_train_rgb.sh
 ```
 ### Evaluation
+
+#### Colored Point Cloud Reconstruction (RGB)
+
 For visualization and metric calculation, run
 ```shell
 cd rgb
