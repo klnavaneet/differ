@@ -40,12 +40,14 @@ cd differ
 #### Colored Point Cloud Reconstruction (RGB)
 To train the model, run
 ```shell
+cd rgb
 bash run_train_rgb.sh
 ```
 ### Evaluation
 For visualization and metric calculation, run
 ```shell
-bash run_metrics.sh
+cd rgb
+bash run_metrics_rgb.sh
 ```
 Make sure that the trained model exists before running the metric calculation code. Use the option *--visualize* in place of *--tqdm* to visualize the reconstructed 3D point clouds.
 
