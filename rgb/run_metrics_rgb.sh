@@ -1,0 +1,11 @@
+python ../src/metrics_joint.py \
+	--exp exp_dir \
+	--gpu 1 \
+	--dataset shapenet \
+	--category chair \
+	--eval_set val \
+	--snapshot 200000 \
+	--mode projection \
+	--skipconn \
+	--color_space rgb \
+	--visualize \
