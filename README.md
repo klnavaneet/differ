@@ -1,6 +1,6 @@
 # DIFFER
-Source codes for the paper [DIFFER: Moving Beyond 3D Reconstruction with Differentiable Feature Rendering].</br>
-Accepted at *3D-WiDGET, First Workshop on Deep GEneraTive models for 3D understanding at CVPR" (CVPRW-19)*
+Source codes for the paper "DIFFER: Moving Beyond 3D Reconstruction with Differentiable Feature Rendering".</br>
+Accepted at *"3D-WiDGET, First Workshop on Deep GEneraTive models for 3D understanding at CVPR" (CVPRW-19)*
 
 ## Overview
 DIFFER proposes a differentiable rendering module to obtain feature projections like rgb image and part segmentations from point clouds. The work is an extension of <a href="https://github.com/val-iisc/capnet" target="_blank" >CAPNet</a>, which could obtain just mask projections from point clouds. The rendering module in differ is depth aware, and hence is able to effectively project features of point clouds on to the image plane. This allows us to train a point cloud reconstruction and feature prediction network in an end-to-end fashion with 2D supervision. <br>
