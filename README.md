@@ -8,12 +8,10 @@ DIFFER proposes a differentiable rendering module to obtain feature projections 
 ![](approach_overview.png)
 
 ## Dataset
-We use the ShapeNet dataset in our experiments. For the part segmentation ground truth labels, we use the part annotated point clouds provided by <a href="https://cs.stanford.edu/~ericyi/project_page/part_annotation/" target="_blank" >Yi et al.</a>. Ground truth point clouds and training and validation splits are provided below: <br>
-ShapeNet pointclouds (~2.8 GB): https://drive.google.com/open?id=1cfoe521iTgcB_7-g_98GYAqO553W8Y0g <br>
-ShapeNet train/val split: https://drive.google.com/open?id=10FR-2Lbn55POB1y47MJ12euvobi6mgtc <br>
-We use the <a href="https://github.com/shubhtuls/drc/blob/master/docs/snet.md#rendering" target="_blank" >code</a> provided by Tulsiani et al. to obtain the rendered images.   
-Data download link for semantic part segmentation(rendered images + ground truth part annotated point clouds + dataset split) is provided below:<br>
-Data (~300 MB): [https://drive.google.com/open?id=1IXpb2PT6Cw49N-VZ0whJsuLGRpJQ8wxO](https://drive.google.com/open?id=1IXpb2PT6Cw49N-VZ0whJsuLGRpJQ8wxO)
+We use the ShapeNet dataset in our experiments. For the part segmentation ground truth labels, we use the part annotated point clouds provided by <a href="https://cs.stanford.edu/~ericyi/project_page/part_annotation/" target="_blank" >Yi et al.</a>. We use the <a href="https://github.com/shubhtuls/drc/blob/master/docs/snet.md#rendering" target="_blank" >code</a> provided by Tulsiani et al. to obtain the rendered images and part segmentation maps. Download links for the datasets are provided below: <br>
+- ShapeNet pointclouds (~2.8 GB): https://drive.google.com/open?id=1cfoe521iTgcB_7-g_98GYAqO553W8Y0g <br>
+- ShapeNet train/val split: https://drive.google.com/open?id=10FR-2Lbn55POB1y47MJ12euvobi6mgtc <br>
+- Part Segmentation Data (rendered images + GT part annotated point clouds + dataset split) (~300 MB): [https://drive.google.com/open?id=1IXpb2PT6Cw49N-VZ0whJsuLGRpJQ8wxO](https://drive.google.com/open?id=1IXpb2PT6Cw49N-VZ0whJsuLGRpJQ8wxO)
 
 Download each of the folders, extract them and move them into *data/*. Save the rendered images and part segmentation maps in *data/ShapeNet_rendered/* and *data/partseg/ShapeNet_labels/* respectively <br> 
 The folder structure should be as follows:<br>
@@ -58,3 +56,15 @@ Make sure that the trained model exists before running the metric calculation co
 1. Provide pre-trained models
 2. Add code for part segmentation
 3. Add dataset and codes for training and evaluation on Pix3D dataset
+
+
+## Citation
+If you make use of the code, please cite the following work:
+```
+@inproceedings{navaneet2019differ,
+ author = {Navaneet, K L and Mandikal, Priyanka and Jampani, Varun and Babu, R Venkatesh},
+ booktitle = {CVPR Workshops},
+ title = {{DIFFER}: Moving Beyond 3D Reconstruction with Differentiable Feature Rendering},
+ year = {2019}
+}
+```
